@@ -1,0 +1,613 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Raleway:100,200,300,400,500,600,700,800,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
+.spacer{
+  display: block;
+  margin-bottom: 755px;
+}
+/*-----tweaks-----*/
+body{
+  font-family: raleway;
+  -webkit-font-smoothing:antialiased;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #20465f;
+    border: 2px solid #ffffff;
+    width: 7px;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #323232;
+    border: 1px solid #A7A7A7;
+    width: 5px;
+}
+
+/*-----typography-----*/
+
+h1, h2, h3, h4, h5, h6, p, a {
+    font-family: raleway;
+    margin: 0;
+}
+.navbar-brand{
+  position: relative;
+  width: 140px;
+  padding: 0;
+  top: -10px;
+}
+.navbar-brand img{
+  position: relative;
+  width:100px;
+  height:100px;
+}
+.navbar-default{
+  position: relative;
+  top: 0;
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  z-index: 9;
+  background: #156cb1;
+  margin-bottom: 0;
+  min-height: 1px;
+  padding: 5px;
+}
+
+.navbar-default .navbar-nav>li>a{
+  font-family: roboto condensed;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  color: #f5f5f5;
+  padding: 8px;
+  font-weight: 500;
+}
+.nav>li{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav>li.active{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.nav>li::before,.nav>li::after{
+  content:'';
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background: #ffffff;
+  transition: all 0.2s ease-in;
+}
+.nav>li.active::before,.nav>li.active::after{
+  display: none;
+}
+.nav>li::before{
+  left: 50%;
+}
+.nav>li::after{
+  right: 50%;
+}
+.nav>li:hover::after,.nav>li:hover::before{
+  width: 50%;
+}
+.navbar-nav>li>a{
+  padding: 5px;
+  padding-bottom: 3px;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+  background-color: #4c6770;
+  color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 20px;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  color: #ff9f00;
+}
+.navbar-nav{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/******banner**/
+#banner {
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+}
+
+
+
+#banner  .text {
+  position: relative;
+  width: 100%;
+  padding: 90px;
+}
+
+#banner  .text h3 {
+  position: relative;
+  width: 100%;
+  font-family: raleway;
+  font-size: 38px;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.2em;
+}
+
+#banner  .text p {
+  position: relative;
+  width: 100%;
+  font-family: open sans;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  text-transform: capitalize;
+  line-height: 1.7em;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#banner  .text input{
+  position: relative;
+  width: 100%;
+  padding-left: 20px;
+  min-height: 40px;
+  border: 0;
+  background: #f5f5f5;
+  color: #555;
+  border-radius: 6px;
+}
+
+#banner  .text input:focus{
+  outline: 0;
+}
+#banner .image{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin-top: 50px;
+  background: url('../img/money.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#feature{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  margin-bottom: 60px;
+}
+#feature .card{
+  position: relative;
+  text-align: center;
+
+}
+
+#feature .card h3{
+  position: relative;
+  font-family: raleway;
+  font-size:20px;
+  font-weight: 500;
+  color: #333;
+  text-transform: capitalize;
+}
+
+#feature .card .img{
+  position: relative;
+  width: 100%;
+  height: 64px;
+  background: url('../img/smartphone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#feature .card p{
+  position: relative;
+  font-family: open sans;
+  font-size: 12px;
+  font-weight: 400;
+  color: #999;
+  text-transform: capitalize;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#feature .card button{
+  position: relative;
+  border: 0;
+  background: 0;
+  padding: 8px 24px;
+  background: #63c29d;
+  border-radius:6px;
+  font-family: raleway;
+  font-size:15px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: capitalize;
+  transition: all .2 sec ease-in;
+}
+
+#feature .card button:hover{
+  border: 2px solid #63c29d;
+  background: #111;
+}
+#cta{
+  position: relative;
+  width: 100%;
+  min-height: 250px;
+  background:#7daded;
+}
+#cta .text{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+#cta .text{
+  position: relative;
+  margin-top: 80px;
+}
+#cta .text h3{
+  position: relative;
+  font-family: raleway;
+  font-size: 28px;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #f5f5f5;
+}
+
+#cta .text p{
+  position: relative;
+  width: 100%;
+  font-family: open sans;
+  font-size: 12px;
+  font-weight: 400;
+  color: #f5f5f5;
+  text-transform: capitalize;
+  line-height: 1.7em;
+  padding-top: 10px;
+  padding-bottom: 20px;
+
+}
+
+#cta .text button{
+  position: relative;
+  border: 0;
+  background: 0;
+  padding: 8px 24px;
+  background: #63c29d;
+  border-radius:6px;
+  font-family: raleway;
+  font-size:15px;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #63c29d;
+  text-transform: capitalize;
+  transition: all .2 sec ease-in;
+}
+
+#cta .text button:hover{
+  border: 2px solid #63c29d;
+  background: #fff;
+  color: #555;
+}
+#cta .text button:focus{
+  outline: 0;
+}
+#footer{
+  position: relative;
+  width: 100%;
+  min-height: 280px;
+
+}
+#footer .content{
+  position: relative;
+  padding-top: 50px;
+
+}
+#footer .content h3{
+  position: relative;
+  font-family: raleway;
+  font-size: 21px;
+  font-weight: 400;
+  color: #4e4646;
+  text-transform: capitalize;
+  padding-left: 39px;
+  padding-bottom: 10px;
+}
+#footer .content ul{
+  position: relative;
+  list-style: none;
+  margin: 0;
+
+}
+#footer .content ul li{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 14px;
+  color: #999;
+}
+#footer .base{
+  position:absolute;
+  width: 100%;
+  min-height:1px;
+  background: #999;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#footer .base h3{
+  position: relative;
+  font-size: 13.5px;
+  font-family: raleway;
+  text-transform: capitalize;
+  color: #f5f5f5;
+  padding-left:2px;
+}
+
+#footer .base img
+{
+  position: relative;
+  display: inline-block;
+  height: 14px;
+  width: auto;
+  margin-right: 15px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+#product{
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  margin-bottom: 100px;
+}
+#product .head{
+  position: relative;
+  margin-bottom: 30px;
+}
+#product .head h3{
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 30px;
+  font-weight: 300;
+  color: #444;
+  text-transform: capitalize;
+}
+#product .button_pane button
+{
+  position: relative;
+  border: 0;
+  background: 0;
+  padding: 8px 24px;
+  background: #63c29d;
+  border-radius:6px;
+  font-family: raleway;
+  font-size:15px;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #63c29d;
+  text-transform: capitalize;
+  transition: all .2 sec ease-in;
+}
+#product .button_pane button:hover{
+  border: 2px solid #63c29d;
+  background: #fff;
+  color: #555;
+}
+
+#product .card{
+  position:relative;
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  text-align: center;
+  padding: 40px;
+}
+#product .card .text h3{
+  position: relative;
+  font-family: raleway;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+    text-transform: capitalize;
+}
+#product .card .text p{
+  position: relative;
+  font-family:open sans;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#product .box{
+  position:relative;
+  width: 100%;
+  min-height: 295px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+}
+
+#product .wrap
+{
+  position: relative;
+  padding: 5px;
+}
+
+#product .wrapper
+{
+  position: relative;
+  padding: 5px;
+
+}
+
+#product .wrap .card .image{
+  position: relative;
+  width: 100%;
+  min-height: 293px;
+  background: url('../img/tab.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#product .wrapper .box .image{
+  position: relative;
+  width: 100%;
+  height:280px;
+  background: url('../img/phone.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 5px;
+}
+#product .wrapper .box .text{
+  position: relative;
+  padding: 35px;
+}
+#product .wrapper .box .text h3{
+
+  position: relative;
+  font-family: raleway;
+    font-size: 20px;
+    font-weight: 400;
+    color: #444;
+    text-transform: capitalize;
+}
+
+#product .wrapper .box .text p{
+
+  position: relative;
+  font-family:open sans;
+    font-size: 12px;
+    font-weight: 400;
+    color: #999;
+    text-transform: capitalize;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#how {
+  position: relative;
+  width: 100%;
+  min-height: 1000px;
+  margin-bottom: 100px;
+}
+#how .heading{
+  position: relative;
+  text-align: center;
+  padding-bottom: 50px;
+}
+#how .heading h3{
+  position: relative;
+  font-family: raleway;
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #555;
+  letter-spacing: 2px;
+}
+#how .image{
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  background: url('../img/card.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#how .line{
+  position: absolute;
+  width: 3px;
+  height: 410px;
+  background: #9079f7;
+  left: 50%;
+  margin-left: -1.5px;
+}
+#how .line .white{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  left: -40.5px;
+  padding-top: 11px;
+  padding-left: 10px;
+}
+
+#how .line .white .no{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #9079f7;
+
+}
+
+
+#how .line .white .no h3{
+  position: relative;
+  color: #fff;
+  padding-top: 7px;
+  padding-left: 22px;
+  font-family:raleway;
+  font-size: 38px;
+  font-weight: 600;
+}
+#how .text{
+  position: relative;
+  padding-left: 100px;
+}
+#how .text h3{
+  margin: 0;
+  position: relative;
+  font-family: roboto condensed;
+  font-size: 21px;
+  text-transform: uppercase;
+  color: #555;
+  letter-spacing: 2px;
+}
+
+#how .text p{
+  position: relative;
+  font-family:open sans;
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #a79b9b;
+  padding-top: 20px;
+  padding-bottom:20px;
+
+}
+
+#how .text button{
+  position: relative;
+  background: 0;
+  border: 0;
+  font-family: roboto condensed;
+  font-size: 17px;
+  text-transform: capitalize;
+  color:  #9079f7;
+  font-weight: 500;
+  transition: all .2s ease-in;
+}
+
+#how .text button:hover{
+
+color: #ccc;
+}
+
+#how .text button:focus{
+  outline: 0;
+}
